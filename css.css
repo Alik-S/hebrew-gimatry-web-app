@@ -1,0 +1,74 @@
+#resLbl {
+  font-size: 400%;
+}
+
+#tooltip {
+  visibility: hidden;
+  left: 70%;
+  bottom: 25%;
+  background-color: black;
+  border-radius: 10%;
+  padding: 1%;
+  width: 7%;
+  height: 1%;
+  color: gray;
+  font-size: 90%;
+  text-align: center;
+  float: bottom;
+}
+
+#resLbl:hover + #tooltip{
+  visibility: visible;
+}
+body {
+ background-color: #004a83;
+
+}
+
+#generalContainer {
+  background-color: #e6be73;
+}
+
+#txtInput {
+  width: 50%;
+  font-size: 120%;
+}
+#copyToClpBrd {
+  background-image: url("https://i.postimg.cc/XJJG9bVk/copt-to-clipbrd-icon.png");
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.allElements {
+  background-color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5%;
+  }
+  
+  input:checked + .methodname{
+    font-size: 150%;
+    background-color: #ffff00;
+    border-radius: 20%;
+  }
+  
+  #lettersValuesSpan {
+    border: 5px solid #5d87ff;
+    text-align: justify;
+    font-size: 120%;
+  }
+  
+  #tmpForCopyLbl {
+    display: none;
+  }
+  
+  #dedication, a{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+  }

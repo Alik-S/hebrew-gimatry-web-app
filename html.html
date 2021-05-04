@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css.css">
+		<script type="text/javascript" src="js.js"></script>
+	</head>
+  <body onload="switchGimatryMethod('regular', '');" dir="rtl">
+  
+ <div id="generalContainer">
+   <center><h1>מחשבון גימטריה</h1></center>
+    <input type="text" id="txtInput" class="allElements" placeholder="הקלד כאן ביטוי" onkeyup = "showGimatryVal(this.value, false)" autofocus><br>
+  <div class="allElements">
+  
+  <input type="radio" id="regularRBtn" name="method" value="regular" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);" checked>
+ <label for="regularRBtn" class="methodname">רגיל</label>
+ <input type="radio" id="bigNumRBtn" name="method" value="bigNum" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);">
+ <label for="bigNumRBtn" class="methodname">מספר גדול</label>
+ <input type="radio" id="smallNumRBtn" name="method" value="smallNum" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);">
+ <label for="smallNumRBtn" class="methodname">מספר קטן</label>
+ <input type="radio" id="sequentialRBtn" name="method" value="sequential" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);">
+ <label for="sequentialRBtn" class="methodname">סדרתי</label>
+ <input type="radio" id="atBashRBtn" name="method" value="atBash" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);">
+ <label for="atBashRBtn" class="methodname">את בש</label>
+ <input type="radio" id="frontedNumRBtn" name="method" value="frontedNum" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);">
+ <label for="frontedNumRBtn" class="methodname">מספר קדמי</label>
+ <input type="radio" id="privateNumRBtn" name="method" value="privateNum" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);">
+ <label for="privateNumRBtn" class="methodname">מספר מרובע</label>
+ <input type="radio" id="shemiNumRBtn" name="method" value="shemiNum" onchange="if(this.checked == true) switchGimatryMethod(this.value, txtInput.value);">
+ <label for="shemiNumRBtn" class="methodname">מספר שמי</label></div>
+
+<label id="resLbl" class="allElements" onclick="copyResToClipBrd(txtInput.value, this.innerHTML)">0</label><span id="tooltip">לחץ כדי להעתיק</span>
+ <div id="methodExplain">
+   <h2 id="expTitle">
+     הסבר: שיטה רגילה
+   </h2>
+   <span id="explainSpan">
+     השיטה הרגילה (הסטנדרטית) ערכי האותיות כספרות עבריות.
+   </span><br><br>
+   <div id="lettersValuesSpan">
+     
+   </div>
+ </div>
+  </div>
+  <textarea id="tmpForCopyLbl"></textarea>
+  <label id="dedication">פרויקט זה מוקדש <a href="addLink">לעילוי נשמות הקדושים שנספו בשואה</a></label>
+  </body>
+</html>

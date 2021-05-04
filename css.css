@@ -33,6 +33,7 @@ body {
   width: 50%;
   font-size: 120%;
 }
+
 #copyToClpBrd {
   background-image: url("https://i.postimg.cc/XJJG9bVk/copt-to-clipbrd-icon.png");
   background-size: contain;
@@ -49,7 +50,7 @@ body {
   border-radius: 5%;
   }
   
-  input:checked + .methodname{
+  input:checked + .methodname {
     font-size: 150%;
     background-color: #ffff00;
     border-radius: 20%;
@@ -65,7 +66,7 @@ body {
     display: none;
   }
   
-  #dedication, a{
+  #dedication, a {
     display: block;
     text-align: center;
     margin-left: auto;

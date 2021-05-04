@@ -791,11 +791,13 @@ function showGimatryVal(valWords, descriptionMode) {
 }
 
 function copyResToClipBrd(txtInput, resVal) {
-	if (resVal === "0") return;
-	var tmpLbl = document.getElementById("tmpForCopyLbl");
+  if (resVal === "0") return;
+	var tmpTA = document.getElementById("tmpForCopyTA");
   let methodName = method == 1 ? "הרגילה" : method == 2 ? "מספר גדול" : method == 3 ? "מספר קטן" : method == 4 ? "סדרתי" : method == 5 ? "את בש" : method == 6 ? "מספר קדמי" : method == 7 ? "מספר מרובע" : "מספר שמי";
-  tmpLbl.value = txtInput + " = " + resVal + " בגימטריה בשיטה " + methodName;
-  tmpLbl.select();
+  tmpTA.style.display = "block";
+  tmpTA.value = txtInput + " = " + resVal + " בגימטריה בשיטה " + methodName;
+  tmpTA.select();
   document.execCommand("copy");
+  tmpTA.style.display = "none";
   alert("תוצאת החישוב הועתקה ללוח");
 }
